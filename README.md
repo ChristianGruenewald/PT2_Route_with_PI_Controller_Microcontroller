@@ -19,18 +19,30 @@
  ## Calculation of the PI controller
 The calculation of the PI controller with PT2 route is based on the dynamic compensation of the largest time constant (20 ms) and a subsequent pole specification.
 #####  PT2- transfer function
+
 $$
 G(S)=V_s\cdot \frac{1}{ (T_1\cdot S+1)(T_2\cdot S+1) }
 $$
+
 ### Dynamic Compensation of T1
 With open controlled system F0:
+
 $$
 F_0(S)=\frac{V_R\cdot (T_N S+1)}{T_NS (T_1\cdot S+1)(T_2\cdot S+1) } 
 $$
-with $$ T_N=T_1$$ T1 cancels out:
+
+with 
+
+$$ 
+T_N=T_1
+$$
+
+T1 cancels out:
+
 $$
 F_0(S)=\frac{V_R\cdot (T_N S+1)}{T_NS (T_N\cdot S+1)(T_2\cdot S+1) } =\frac{V_R}{T_NS (T_2\cdot S+1) }
 $$
+
 ### Pole Specifictation
 Using the above function, the gain VR for the PI controller can be determined using the following formula:
 
