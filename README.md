@@ -33,23 +33,31 @@ F_0(S)=\frac{V_R\cdot (T_N S+1)}{T_NS (T_N\cdot S+1)(T_2\cdot S+1) } =\frac{V_R}
 $$
 ### Pole Specifictation
 Using the above function, the gain VR for the PI controller can be determined using the following formula:
+
 $$
 V_R=\frac{T_N}{4D^2T_2}
 $$
+
 Now the damping can be selected. This is usually selected with D=1, D=0.7 or D=0.5.
 
- For D=1: 
+ For D=1:
+ 
  $$
  V_R=\frac{20 ms}{4\cdot 1^2\cdot 10 ms}\approx0.5
  $$
- For D=0.7: 
+ 
+ For D=0.7:
+ 
  $$
  V_R=\frac{20 ms}{4\cdot 0.7^2\cdot 10 ms}\approx1
  $$
+ 
  For D=0.5: 
+ 
  $$
  V_R=\frac{20 ms}{4\cdot 0.5^2\cdot 10 ms}\approx2
  $$
+ 
  Now all cases have been examined and implemented in the controller.
  
  ## Result 
