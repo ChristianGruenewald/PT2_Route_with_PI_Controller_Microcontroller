@@ -38,15 +38,15 @@ V_R=\frac{T_N}{4D^2T_2}
 $$
 Now the damping can be selected. This is usually selected with D=1, D=0.7 or D=0.5.
 
- - For D=1: 
+ For D=1: 
  $$
  V_R=\frac{20 ms}{4\cdot 1^2\cdot 10 ms}\approx0.5
  $$
-  - For D=0.7: 
+ For D=0.7: 
  $$
  V_R=\frac{20 ms}{4\cdot 0.7^2\cdot 10 ms}\approx1
  $$
-  - For D=0.5: 
+ For D=0.5: 
  $$
  V_R=\frac{20 ms}{4\cdot 0.5^2\cdot 10 ms}\approx2
  $$
